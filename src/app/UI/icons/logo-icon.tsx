@@ -17,11 +17,11 @@ export const LogoIcon = ({ className }: classNameType) => {
 
       <g
         id="svgGroup"
-        stroke-linecap="round"
-        fill-rule="evenodd"
-        font-size="9pt"
+        strokeLinecap="round"
+        fillRule="evenodd"
+        fontSize="9pt"
         stroke="#000"
-        stroke-width="0.25mm"
+        strokeWidth="0.25mm"
         fill="#fff"
       >
         <path
