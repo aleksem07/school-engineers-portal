@@ -11,7 +11,7 @@ export const Footer = ({ className }: { className?: string }) => {
       <div className="flex gap-4">
         {CONTACTS.map(({ name, Icon, link }) => (
           <Link href={link} target="_blank" key={name}>
-            <Icon className="hover:text-gray-500" />
+            <Icon className="hover:text-gray-500 transition-all duration-300" />
           </Link>
         ))}
       </div>

@@ -7,7 +7,7 @@ export const MailIcon = ({ className }: { className: string }) => {
       height="24"
       viewBox="0 0 90 90"
     >
-      <title>telegram</title>
+      <title>Mail</title>
       <path
         fill="currentColor"
         fillRule="evenodd"

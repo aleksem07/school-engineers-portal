@@ -15,6 +15,9 @@ const config: Config = {
       },
       gridTemplateRows: {
         'dashboard': 'auto 1fr auto',
+      },
+      gridTemplateColumns: {
+        'logo': 'auto 1fr',
       }
     },
   },

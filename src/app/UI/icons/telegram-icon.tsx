@@ -7,7 +7,7 @@ export const TelegramIcon = ({ className }: { className: string }) => {
       height="24"
       viewBox="0 0 31 28"
     >
-      <title>telegram</title>
+      <title>Telegram</title>
       <path
         fill="currentColor"
         fillRule="evenodd"

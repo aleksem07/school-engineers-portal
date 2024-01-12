@@ -13,21 +13,21 @@ export const Dashboard = () => {
 
   return (
     <nav className="grid grid-rows-dashboard w-3/12 min-w-40 shadow-2xl height-screen">
-      <Logo className={"border-b-2 p-4 flex justify-start"} />
+      <Logo className={"border-b-2 p-4"} />
       <div className="flex flex-col px-2 py-4">
-        {NAV_LINKS.map(({ name, path, icon }) => (
+        {NAV_LINKS.map(({ name, path, Icon }) => (
           <Link
             href={path}
             onClick={() => dispatch(setPath(path))}
-            className={`flex justify-between gap-2 p-2 my-1 transition-all duration-300 rounded-lg ${
+            className={`flex justify-start gap-2 p-2 my-1 transition-all duration-300 rounded-lg ${
               currentPath === path
                 ? "bg-gray-200 hover:bg-gray-200"
                 : "hover:bg-gray-100 hover:text-gray-500"
             }`}
             key={name}
           >
-            <p>{name}</p>
-            <p>{icon}</p>
+            <p>{<Icon />}</p>
+            <p className="leading-[1.75]">{name}</p>
           </Link>
         ))}
       </div>
