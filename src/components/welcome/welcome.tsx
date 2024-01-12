@@ -8,10 +8,10 @@ export const Welcome = () => {
         {" "}
         SEP - единый портал для инженеров образовательных учреждений
       </h1>
-      <h2 className="text-3xl font-bold inline">
+      <h2 className="text-2xl font-bold inline sm:text-3xl">
         Добро пожаловать в {<LogoIcon className="inline" />}
       </h2>
-      <p className="text-sm text-zinc-700">единый портал для инженеров образовательных учреждений</p>
+      <p className="text-center text-xs text-zinc-700 sm:text-sm">единый портал для инженеров образовательных учреждений</p>
     </div>
   );
 };

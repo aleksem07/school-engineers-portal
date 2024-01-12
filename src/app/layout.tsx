@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import { Poppins } from "next/font/google";
+import { Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 import "./normalize.css";
 import { Dashboard } from "@/components/dashboard/dashboard";
 import { Providers } from "@/redux/provider";
-import { Inter } from "next/font/google";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -35,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={`flex justify-center h-screen ${inter.className}`}>
+      <body className={`flex justify-center h-screen ${roboto.className}`}>
         <Providers>
           <main className="flex gap-2 max-w-7xl w-full">
             <Dashboard />

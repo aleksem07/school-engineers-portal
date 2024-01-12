@@ -21,7 +21,7 @@ export const Dashboard = () => {
             onClick={() => dispatch(setPath(path))}
             className={`flex justify-start gap-2 p-2 my-1 transition-all duration-300 rounded-lg ${
               currentPath === path
-                ? "bg-gray-200 hover:bg-gray-200"
+                ? "bg-gray-400 hover:bg-gray-400 cursor-default"
                 : "hover:bg-gray-100 hover:text-gray-500"
             }`}
             key={name}
