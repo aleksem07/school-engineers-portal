@@ -20,9 +20,7 @@ export default function RootLayout({
       <body className={`flex justify-center h-screen ${inter.className}`}>
         <main className="flex gap-4 max-w-7xl w-full">
           <Dashboard />
-          <div className='w-full p-4'>
-            {children}
-          </div>
+          <div className="w-full p-4">{children}</div>
         </main>
       </body>
     </html>
