@@ -16,7 +16,7 @@ export const Footer = ({ className }: { className?: string }) => {
         ))}
       </div>
 
-      <p className="text-xs items-center">© {currentYear}</p>
+      <p className="text-xs items-center">aleksem07 © {currentYear}</p>
     </footer>
   );
 };
