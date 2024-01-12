@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Dashboard } from "@/components/dashboard/dashboard";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={inter.className}>{children}</body>
+      <body className={`flex justify-center h-screen ${inter.className}`}>
+        <main className="flex gap-4 max-w-7xl w-full">
+          <Dashboard />
+          <div className='w-full p-4'>
+            {children}
+          </div>
+        </main>
+      </body>
     </html>
   );
 }
