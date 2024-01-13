@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LogoIcon } from "@/app/UI/icons/logo-icon";
+import { LogoIcon } from "@/UI/icons/logo-icon";
 import { useAppSelector, useAppDispatch } from "@/redux/hooks";
 import { RootState } from "@/redux/store";
 import { AppRoutes } from "@/common/routes";

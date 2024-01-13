@@ -1,6 +1,6 @@
-import { GitHubIcon } from "@/app/UI/icons/github-icon";
-import { TelegramIcon } from "@/app/UI/icons/telegram-icon";
-import { MailIcon } from "@/app/UI/icons/mail-icon";
+import { GitHubIcon } from "@/UI/icons/github-icon";
+import { TelegramIcon } from "@/UI/icons/telegram-icon";
+import { MailIcon } from "@/UI/icons/mail-icon";
 
 export const CONTACTS = [
   {
