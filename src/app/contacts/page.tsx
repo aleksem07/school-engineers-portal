@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SEP - Internet",
+  title: "SEP - Contacts",
 };
 
-export default function Internet() {
+export default function Contacts() {
   return (
     <>
-      <p>Пnternet</p>
+      <p>Contacts</p>
     </>
   );
 }
