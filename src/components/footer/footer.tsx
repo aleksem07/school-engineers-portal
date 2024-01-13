@@ -1,22 +1,19 @@
-import Link from "next/link";
-import { CONTACTS } from "@/common/contacts";
+import { Contacts } from "@/components/contacts/contacts";
 
 const currentYear = new Date().getFullYear();
 
 export const Footer = ({ className }: { className?: string }) => {
   return (
     <footer
-      className={`flex flex-col gap-4 items-center justify-center p-4 ${className}`}
+      className={`flex flex-col gap-4 items-center justify-center p-4 mobile:px-1 ${
+        className || ""
+      }`}
     >
-      <div className="flex gap-4">
-        {CONTACTS.map(({ name, Icon, link }) => (
-          <Link href={link} target="_blank" key={name}>
-            <Icon className="hover:text-gray-500 transition-all duration-300" />
-          </Link>
-        ))}
-      </div>
+      <Contacts className="mobile:flex-col" />
 
-      <p className="text-xs items-center">aleksem07 © {currentYear}</p>
+      <p className="text-xs items-center mobile:hidden">
+        aleksem07 © {currentYear}
+      </p>
     </footer>
   );
 };

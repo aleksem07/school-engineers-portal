@@ -2,7 +2,7 @@ import { AppRoutes } from "./routes";
 import HomeIcon from "@mui/icons-material/Home";
 import NetworkCheckIcon from "@mui/icons-material/NetworkCheck";
 import RecentActorsIcon from "@mui/icons-material/RecentActors";
-import RestaurantIcon from '@mui/icons-material/Restaurant';
+import RestaurantIcon from "@mui/icons-material/Restaurant";
 
 export const NAV_LINKS = [
   {
@@ -15,7 +15,7 @@ export const NAV_LINKS = [
     path: AppRoutes.INTERNET,
     Icon: NetworkCheckIcon,
   },
-    {
+  {
     name: "Питание",
     path: AppRoutes.NUTRITION,
     Icon: RestaurantIcon,

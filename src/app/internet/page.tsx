@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 export default function Internet() {
   return (
     <>
-      <p>Гnternet</p>
+      <p>Пnternet</p>
     </>
   );
 }
