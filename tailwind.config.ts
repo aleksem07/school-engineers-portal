@@ -29,6 +29,7 @@ const config: Config = {
       ...defaultTheme.screens,
     },
     colors: {
+      'color-black': '#000000',
       'color-dark': '#4e5464',
       'color-dark--light': '#8c899b',
       'color-grey': '#c5c4cb',
