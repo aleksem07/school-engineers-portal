@@ -1,11 +1,11 @@
-"use client";
-import { Logo } from "@/components/logo/logo";
-import { Footer } from "@/components/footer/footer";
-import { NAV_LINKS } from "@/common/nav-links";
-import Link from "next/link";
-import { setPath } from "@/redux/pathSlice/pathSlice";
-import { RootState } from "@/redux/store";
-import { useAppDispatch, useAppSelector } from "@/redux/hooks";
+'use client';
+import { Logo } from '@/components/logo/logo';
+import { Footer } from '@/components/footer/footer';
+import { NAV_LINKS } from '@/common/nav-links';
+import Link from 'next/link';
+import { setPath } from '@/redux/pathSlice/pathSlice';
+import { RootState } from '@/redux/store';
+import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 
 export const Dashboard = () => {
   const dispatch = useAppDispatch();
@@ -13,7 +13,7 @@ export const Dashboard = () => {
 
   return (
     <nav className="grid grid-rows-dashboard w-3/12 tablet:min-w-40 shadow-2xl height-screen mobile:max-w-16">
-      <Logo className={"border-b-2 p-4"} />
+      <Logo className={'border-b-2 p-4'} />
       <div className="flex flex-col px-2 py-4 mobile:px-1 ">
         {NAV_LINKS.map(({ name, path, Icon }) => (
           <Link
@@ -21,8 +21,8 @@ export const Dashboard = () => {
             onClick={() => dispatch(setPath(path))}
             className={`flex justify-start gap-2 p-2 my-1 transition-all duration-300 rounded-lg mobile:justify-center mobile:px-1 ${
               currentPath === path
-                ? "bg-gray-400 hover:bg-gray-400 cursor-default"
-                : "hover:bg-gray-100 hover:text-gray-500"
+                ? 'bg-gray-400 hover:bg-gray-400 cursor-default'
+                : 'hover:bg-gray-100 hover:text-gray-500'
             }`}
             key={name}
           >

@@ -1,5 +1,5 @@
-import styles from "@/UI/sass/visually-hidden.module.scss";
-import { LogoIcon } from "@/UI/icons/logo-icon";
+import styles from '@/UI/sass/visually-hidden.module.scss';
+import { LogoIcon } from '@/UI/icons/logo-icon';
 
 export const Welcome = () => {
   return (

@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "SEP - Internet",
+  title: 'SEP - Internet',
 };
 
 export default function Internet() {

@@ -1,5 +1,5 @@
-import { configureStore } from "@reduxjs/toolkit";
-import pathSlice from "./pathSlice/pathSlice";
+import { configureStore } from '@reduxjs/toolkit';
+import pathSlice from './pathSlice/pathSlice';
 
 export const store = configureStore({
   reducer: {

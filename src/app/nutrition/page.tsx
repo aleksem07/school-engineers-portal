@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "SEP - Nutrition",
+  title: 'SEP - Nutrition',
 };
 
 export default function Nutrition() {
