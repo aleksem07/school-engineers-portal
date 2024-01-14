@@ -23,7 +23,7 @@ export const Logo = ({ className }: { className?: string }) => {
         {currentPath === AppRoutes.HOME ? (
           <LogoIcon className="cursor-default" />
         ) : (
-          <LogoIcon />
+          <LogoIcon className='hover:bg-color-dark' />
         )}
       </Link>
       <p className="text-xs max-w-1 mobile:hidden">school engineers portal</p>
