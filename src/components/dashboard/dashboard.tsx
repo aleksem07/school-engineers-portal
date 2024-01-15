@@ -6,10 +6,16 @@ import Link from 'next/link';
 import { setPath } from '@/redux/pathSlice/pathSlice';
 import { RootState } from '@/redux/store';
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
+import { useEffect } from 'react';
 
 export const Dashboard = () => {
   const dispatch = useAppDispatch();
   const currentPath = useAppSelector((state: RootState) => state.path.value);
+
+  useEffect(() => {
+    const storedPath = window.location.pathname;
+    dispatch(setPath(storedPath));
+  }, [dispatch]);
 
   return (
     <nav className="grid grid-rows-dashboard w-3/12 tablet:min-w-40 shadow-2xl height-screen mobile:max-w-16">
