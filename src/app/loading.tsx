@@ -1,19 +1,19 @@
 'use client';
-import { BallTriangle } from 'react-loader-spinner';
+import { RevolvingDot } from 'react-loader-spinner';
 
-export default function Loading() {
+const Loading = () => {
   return (
     <div className="h-[100%] flex flex-col justify-center items-center">
-      <BallTriangle
-        height={100}
-        width={100}
-        radius={5}
-        color="black"
-        ariaLabel="ball-triangle-loading"
+      <RevolvingDot
+        visible={true}
+        height="80"
+        width="80"
+        color="#000000"
         wrapperStyle={{}}
         wrapperClass=""
-        visible={true}
       />
     </div>
   );
-}
+};
+
+export default Loading;

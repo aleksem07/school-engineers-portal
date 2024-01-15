@@ -7,7 +7,7 @@ type PathStateType = {
 };
 
 const initialState: PathStateType = {
-  value: AppRoutes.HOME,
+  value: '',
 };
 
 const pathSlice = createSlice({
