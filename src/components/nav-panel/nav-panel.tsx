@@ -8,7 +8,7 @@ import { RootState } from '@/redux/store';
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import { useEffect } from 'react';
 
-export const Dashboard = () => {
+export const NavPanel = () => {
   const dispatch = useAppDispatch();
   const currentPath = useAppSelector((state: RootState) => state.path.value);
 

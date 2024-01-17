@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
 import './normalize.css';
-import { Dashboard } from '@/components/dashboard/dashboard';
+import { NavPanel } from '@/components/nav-panel/nav-panel';
 import { Providers } from '@/redux/provider';
 
 const roboto = Roboto({
@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={`flex justify-center h-screen ${roboto.className}`}>
         <Providers>
           <main className="flex gap-2 max-w-7xl w-full">
-            <Dashboard />
+            <NavPanel />
             <section className="w-full h-[100%] overflow-auto p-4">
               {children}
             </section>
