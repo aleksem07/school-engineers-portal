@@ -1,21 +1,21 @@
-import { GitHubIcon } from "@/app/UI/icons/github-icon";
-import { TelegramIcon } from "@/app/UI/icons/telegram-icon";
-import { MailIcon } from "@/app/UI/icons/mail-icon";
+import { GitHubIcon } from '@/UI/icons/github-icon';
+import { TelegramIcon } from '@/UI/icons/telegram-icon';
+import { MailIcon } from '@/UI/icons/mail-icon';
 
 export const CONTACTS = [
   {
-    name: "telegram account",
+    name: 'telegram account',
     Icon: TelegramIcon,
-    link: "https://t.me/aleksem07",
+    link: 'https://t.me/aleksem07',
   },
   {
-    name: "github account",
+    name: 'github account',
     Icon: GitHubIcon,
-    link: "https://github.com/aleksem07",
+    link: 'https://github.com/aleksem07',
   },
   {
-    name: "mail",
+    name: 'mail',
     Icon: MailIcon,
-    link: "mailto:aleksem07@gmail.com",
+    link: 'mailto:aleksem07@gmail.com',
   },
 ];

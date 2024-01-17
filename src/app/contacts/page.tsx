@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "SEP - Contacts",
+  title: 'SEP - Contacts',
 };
 
 export default function Contacts() {
