@@ -8,12 +8,17 @@ import Button from '@mui/material/Button';
 type AccordionUsageProps = {
   title: string;
   data: React.ReactNode;
+  isOpen?: boolean;
 };
 
-export default function AccordionUsage({ title, data }: AccordionUsageProps) {
+export default function AccordionUsage({
+  title,
+  data,
+  isOpen = false,
+}: AccordionUsageProps) {
   return (
-    <div className='mb-2'>
-      <Accordion>
+    <div className="mb-2">
+      <Accordion defaultExpanded={isOpen}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           {title}
         </AccordionSummary>

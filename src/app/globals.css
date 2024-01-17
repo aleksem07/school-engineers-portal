@@ -6,8 +6,26 @@
   --foreground-rgb: 25, 25, 25;
   --background-start-rgb: 197,196,203;
   --background-end-rgb: 245, 245, 241;
+  --color-contrast: #305165;
+  --color-dark--light: #8c899b;
+  
 }
 
+a {
+  transition: all 0.3s ease-out;
+  color: var(--color-contrast);
+}
+
+a:hover {
+  transition: all 0.3s ease-out;
+    color: var(--color-dark--light);
+}
+
+ul,
+ol {
+  margin-left: 2rem;
+  list-style-type: decimal;
+}
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 200, 200, 200;

@@ -18,14 +18,14 @@ export const NavPanel = () => {
   }, [dispatch]);
 
   return (
-    <nav className="grid grid-rows-dashboard w-3/12 tablet:min-w-40 shadow-2xl height-screen mobile:max-w-16">
+    <nav className="grid grid-rows-dashboard w-3/12 tablet:min-w-40 shadow-2xl height-screen mobile:max-w-16 text-color-black">
       <Logo className={'border-b-2 border-color-grey p-4'} />
-      <div className="flex flex-col px-2 py-4 mobile:px-1 ">
+      <div className="flex flex-col px-2 py-4 mobile:px-1">
         {NAV_LINKS.map(({ name, path, Icon }) => (
           <Link
             href={path}
             onClick={() => dispatch(setPath(path))}
-            className={`flex justify-start gap-2 p-2 my-1 transition-all duration-300 rounded-lg mobile:justify-center mobile:px-1 ${
+            className={`flex justify-start gap-2 p-2 my-1 transition-all duration-300 rounded-lg mobile:justify-center mobile:px-1 text-color-black ${
               currentPath === path
                 ? 'bg-color-dark--light hover:bg-color-dark--light cursor-default'
                 : 'hover:bg-color-grey'

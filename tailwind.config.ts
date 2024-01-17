@@ -29,12 +29,13 @@ const config: Config = {
       ...defaultTheme.screens,
     },
     colors: {
-      'color-black': '#000000',
+      'color-black': '#242424',
       'color-dark': '#4e5464',
       'color-dark--light': '#8c899b',
       'color-grey': '#c5c4cb',
       'color-light': '#f5f5f1',
       'color-additional': '#d4d8e6',
+      'color-contrast': '#305165',
     }
   },
   plugins: [],

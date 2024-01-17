@@ -28,10 +28,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - react-loader-spinner [https://mhnpd.github.io/react-loader-spinner/docs/intro]
 - tailwindcss [https://tailwindcss.ru/]
+- materialUI [https://mui.com/material-ui/]
 
-## "scripts":
-- "dev": "next dev",
-- "build": "next build",
-- "start": "next start",
-- "lint": "next lint",
-- "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
+## TODO
+- [ ] Internet
+- [ ] Search
+- [ ] Food
+- [ ] Contacts
+- [ ] Linux
+- [ ] Favorites

@@ -1,5 +1,6 @@
 import { Welcome } from '@/components/welcome/welcome';
 import { Contacts } from '@/components/contacts/contacts';
+import AccordionUsage from '@/components/material/accordion/accordion';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <p>Нашли ошибку, появились вопросы или предложения?</p>
         <Contacts className="justify-center" />
       </div>
+      <AccordionUsage title="Что нового?" data={<p>Идет разработка...</p>} />
     </>
   );
 }
