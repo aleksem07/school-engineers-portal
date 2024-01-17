@@ -1,3 +1,5 @@
+import styles from '@/UI/sass/logo.module.scss';
+
 type classNameType = {
   className?: string;
 };
@@ -5,15 +7,13 @@ type classNameType = {
 export const LogoIcon = ({ className }: classNameType) => {
   return (
     <svg
-      className={`bg-gray-900 p-1 py-2 rounded-md ${
-        className ? className : ""
-      }`}
+      className={`${styles.logo} ${className ? className : ''}`}
       xmlns="http://www.w3.org/2000/svg"
       width="50"
       height="50"
       viewBox="0 0 96.05 36.45"
     >
-      <title>Logo</title>
+      <title>SEP - logo</title>
 
       <g
         id="svgGroup"

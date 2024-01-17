@@ -1,5 +1,5 @@
-import type { Config } from 'tailwindcss'
-const defaultTheme = require('tailwindcss/defaultTheme')
+import type { Config } from 'tailwindcss';
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 const config: Config = {
   content: [
@@ -27,6 +27,14 @@ const config: Config = {
       'tablet': '640px',
       'mobile': {'max': '639px'},
       ...defaultTheme.screens,
+    },
+    colors: {
+      'color-black': '#000000',
+      'color-dark': '#4e5464',
+      'color-dark--light': '#8c899b',
+      'color-grey': '#c5c4cb',
+      'color-light': '#f5f5f1',
+      'color-additional': '#d4d8e6',
     }
   },
   plugins: [],

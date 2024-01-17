@@ -1,17 +1,16 @@
-import { createSlice } from "@reduxjs/toolkit";
-import type { PayloadAction } from "@reduxjs/toolkit";
-import { AppRoutes } from "@/common/routes";
+import { createSlice } from '@reduxjs/toolkit';
+import type { PayloadAction } from '@reduxjs/toolkit';
 
 type PathStateType = {
   value: string;
 };
 
 const initialState: PathStateType = {
-  value: AppRoutes.HOME,
+  value: '',
 };
 
 const pathSlice = createSlice({
-  name: "path",
+  name: 'path',
   initialState,
   reducers: {
     setPath(state, action: PayloadAction<string>) {
