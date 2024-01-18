@@ -6,7 +6,7 @@
 
 :root {
   --foreground-rgb: 25, 25, 25;
-  --background-start-rgb: 197,196,203;
+  --background-start-rgb: 197, 196, 203;
   --background-end-rgb: 245, 245, 241;
 }
 
@@ -17,12 +17,10 @@ a {
 
 a:hover {
   transition: all 0.3s ease-out;
-    color: $color-dark--light;
+  color: $color-dark--light;
 }
 
-ul,
 ol {
-  margin-left: 2rem;
   list-style-type: decimal;
 }
 /* @media (prefers-color-scheme: dark) {
@@ -34,11 +32,9 @@ ol {
 } */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: $color-black;
+}
+
+main {
+  background: $color-grey;
 }

@@ -32,8 +32,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## TODO
 - [ ] Internet
-- [ ] Search
+- [ ] Linux
 - [ ] Food
 - [ ] Contacts
-- [ ] Linux
 - [ ] Favorites
+- [ ] Search

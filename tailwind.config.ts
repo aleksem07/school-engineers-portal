@@ -32,6 +32,7 @@ const config: Config = {
       'color-black': '#242424',
       'color-dark': '#4e5464',
       'color-dark--light': '#8c899b',
+      'color-dark--light-300': 'rgba(140, 137, 155, 0.3)',
       'color-grey': '#c5c4cb',
       'color-light': '#f5f5f1',
       'color-additional': '#d4d8e6',
