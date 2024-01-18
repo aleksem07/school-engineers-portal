@@ -1,6 +1,8 @@
 export enum AppRoutes {
   HOME = '/',
   INTERNET = '/internet',
-  NUTRITION = '/nutrition',
+  LINUX = '/linux',
+  FOOD = '/food',
   CONTACTS = '/contacts',
+  FAVORITES = '/favorites',
 }
