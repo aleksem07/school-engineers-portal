@@ -1,3 +1,5 @@
+@import '@/UI/sass/variables.module.scss';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,19 +8,16 @@
   --foreground-rgb: 25, 25, 25;
   --background-start-rgb: 197,196,203;
   --background-end-rgb: 245, 245, 241;
-  --color-contrast: #305165;
-  --color-dark--light: #8c899b;
-  
 }
 
 a {
   transition: all 0.3s ease-out;
-  color: var(--color-contrast);
+  color: $color-contrast;
 }
 
 a:hover {
   transition: all 0.3s ease-out;
-    color: var(--color-dark--light);
+    color: $color-dark--light;
 }
 
 ul,

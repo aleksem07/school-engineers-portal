@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
-import './globals.css';
+import './globals.scss';
 import './normalize.css';
 import { NavPanel } from '@/components/nav-panel/nav-panel';
 import { Providers } from '@/redux/provider';

@@ -25,10 +25,10 @@ export const NavPanel = () => {
           <Link
             href={path}
             onClick={() => dispatch(setPath(path))}
-            className={`flex justify-start gap-2 p-2 my-1 transition-all duration-300 rounded-lg mobile:justify-center mobile:px-1 text-color-black ${
+            className={` flex justify-start gap-2 p-2 my-1 transition-all duration-300 rounded-lg mobile:justify-center mobile:px-1 text-color-black ${
               currentPath === path
-                ? 'bg-color-dark--light hover:bg-color-dark--light cursor-default'
-                : 'hover:bg-color-grey'
+                ? 'bg-color-dark--light hover:bg-color-dark--light cursor-default hover:text-color-black'
+                : 'hover:bg-color-grey hover:text-color-black'
             }`}
             key={name}
           >
