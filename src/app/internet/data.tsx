@@ -10,7 +10,8 @@ const DataInternet = () => {
         title={'Сетевые настройки'}
         data={
           <>
-            <BasicTabs /> <Link href={'/'}>Подробнее</Link>
+            <BasicTabs />
+            <Link href={'/'}>Подробнее</Link>
           </>
         }
         isOpen

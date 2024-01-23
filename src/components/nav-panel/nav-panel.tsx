@@ -19,13 +19,13 @@ export const NavPanel = () => {
   }, [dispatch]);
 
   return (
-    <nav className="grid grid-rows-dashboard w-2/12 tablet:min-w-40 mobile:max-w-16 h-screen text-color-light bg-color-contrast">
+    <nav className="grid sticky top-0 grid-rows-dashboard w-2/12 tablet:min-w-40 mobile:max-w-16 h-screen text-color-light bg-color-contrast">
       <Logo className={'border-b-2 border-color-grey p-4'} />
       <ul
         className={`flex gap-2 flex-col pl-4 py-4 mobile:pl-1 ${styles.navPanel}`}
       >
-        {NAV_LINKS.map(({ name, path, Icon }) => (
-          <li key={name}>
+        {NAV_LINKS.map(({ name, path, Icon }, index) => (
+          <li key={`${name} ${index}`}>
             <Link
               href={path}
               onClick={() => dispatch(setPath(path))}
