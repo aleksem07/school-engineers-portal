@@ -3,7 +3,7 @@ import AccordionUsage from '@/components/material/accordion/accordion';
 import BasicTabs from '@/components/material/tabs/tabs';
 import Link from 'next/link';
 
-const DataInternet = () => {
+const SettingInternet = ({ open }: { open?: boolean }) => {
   return (
     <>
       <AccordionUsage
@@ -14,10 +14,10 @@ const DataInternet = () => {
             <Link href={'/'}>Подробнее</Link>
           </>
         }
-        isOpen
+        isOpen={open}
       />
     </>
   );
 };
 
-export default DataInternet;
+export default SettingInternet;

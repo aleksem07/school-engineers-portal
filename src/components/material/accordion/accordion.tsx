@@ -20,7 +20,7 @@ export default function AccordionUsage({
     <div className="mb-2">
       <Accordion defaultExpanded={isOpen}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          {title}
+          <h2 className="p-1 mb-0">{title}</h2>
         </AccordionSummary>
         <AccordionDetails>{data}</AccordionDetails>
       </Accordion>

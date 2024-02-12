@@ -23,6 +23,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## В проекте используются:
+
 - nextjs with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
   - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
   - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
@@ -30,7 +31,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - tailwindcss [https://tailwindcss.ru/]
 - materialUI [https://mui.com/material-ui/]
 
+## Nav
+
+`app` - страницы приложения
+`common` -
+`components` - компоненты
+`data` - содержит статьи и материалы
+`redux` -
+`UI` - стили sass, иконки tsx
+
 ## TODO
+
 - [ ] Internet
 - [ ] Linux
 - [ ] Food

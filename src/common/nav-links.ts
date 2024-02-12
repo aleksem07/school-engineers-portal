@@ -16,8 +16,8 @@ export const NAV_LINKS = [
     Icon: HomeIcon,
   },
   {
-    name: 'Интернет',
-    path: AppRoutes.INTERNET,
+    name: 'Настройки',
+    path: AppRoutes.SETTINGS,
     Icon: NetworkCheckIcon,
   },
   {

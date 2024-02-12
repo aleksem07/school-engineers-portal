@@ -5,7 +5,7 @@ import AccordionUsage from '@/components/material/accordion/accordion';
 const DataDisableContentFilter = () => {
   return (
     <AccordionUsage
-      title={'Отключение контентной фильтраци'}
+      title={'Отключение контентной фильтрации'}
       data={
         <div>
           <p>
@@ -23,11 +23,10 @@ const DataDisableContentFilter = () => {
             <Link href={'mailto:mcszo@digital.gov.ru'}>
               mcszo@digital.gov.ru
             </Link>
-            :
           </p>
 
           <p>Текст заявления должен содержать:</p>
-          <ol>
+          <ol className="ml-10">
             <li>
               Просьбу о полном отключение контентной фильтрации с
               административных компьютеров;

@@ -1,6 +1,6 @@
 export enum AppRoutes {
   HOME = '/',
-  INTERNET = '/internet',
+  SETTINGS = '/settings',
   LINUX = '/linux',
   FOOD = '/food',
   CONTACTS = '/contacts',
