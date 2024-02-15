@@ -30,8 +30,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - tailwindcss [https://tailwindcss.ru/]
 
 ## "scripts":
-- "dev": "next dev",
-- "build": "next build",
-- "start": "next start",
-- "lint": "next lint",
-- "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
+- `"dev"`: "next dev",
+- `"build"`: "next build",
+- `"start"`: "next start",
+- `"lint"`: "next lint",
+- `"format"`: "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
