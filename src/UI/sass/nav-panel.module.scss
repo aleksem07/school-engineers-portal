@@ -1,0 +1,34 @@
+@import '@/UI/sass/variables.module.scss';
+.navPanel {
+  $border-radius: 1rem;
+  & li {
+    position: relative;
+    view-transition-name: activeNav;
+
+    & a {
+      transition: none;
+    }
+
+    & a.active::before,
+    & a.active::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: $border-radius;
+      height: $border-radius;
+      background-color: $color-contrast;
+    }
+
+    & a.active::before {
+      top: calc($border-radius * -1);
+      border-radius: 0 0 100vw 0;
+      box-shadow: 5px 5px 0 5px $color-grey;
+    }
+
+    & a.active::after {
+      bottom: calc($border-radius * -1);
+      border-radius: 0 100vw 0 0;
+      box-shadow: 5px -5px 0 5px $color-grey;
+    }
+  }
+}

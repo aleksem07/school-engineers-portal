@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 export default function Contacts() {
   return (
     <>
-      <p>Contacts</p>
+      <p>Contacts - раздел в разработке</p>
     </>
   );
 }
