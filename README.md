@@ -47,4 +47,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [ ] Food
 - [ ] Contacts
 - [ ] Favorites
-- [ ] Search
+
+## "scripts":
+- `"dev"`: "next dev",
+- `"build"`: "next build",
+- `"start"`: "next start",
+- `"lint"`: "next lint",
+- `"format"`: "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
+
