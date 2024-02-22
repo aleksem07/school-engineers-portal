@@ -17,7 +17,7 @@ export default function AccordionUsage({
   isOpen = false,
 }: AccordionUsageProps) {
   return (
-    <div className="mb-2">
+    <div className="mb-2 flex-1">
       <Accordion defaultExpanded={isOpen}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <h2 className="p-1 mb-0">{title}</h2>

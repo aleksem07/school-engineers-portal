@@ -3,7 +3,7 @@ import AccordionUsage from '@/components/material/accordion/accordion';
 import BasicTabs from '@/components/material/tabs/tabs';
 import Link from 'next/link';
 
-const SettingInternet = ({ open }: { open?: boolean }) => {
+const NetworkSetting = ({ open }: { open?: boolean }) => {
   return (
     <>
       <AccordionUsage
@@ -20,4 +20,4 @@ const SettingInternet = ({ open }: { open?: boolean }) => {
   );
 };
 
-export default SettingInternet;
+export default NetworkSetting;

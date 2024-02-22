@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { useRouter } from 'next/navigation';
-import { AppRoutes } from '@/common/routes';
+import { APP_ROUTES } from '@/common/routes';
 
 export const metadata: Metadata = {
   title: '404 Page not found',
@@ -28,7 +28,7 @@ export default function NotFound() {
           назад
         </button>
         <Link
-          href={AppRoutes.HOME}
+          href={APP_ROUTES.HOME}
           className="text-color-dark hover:text-color-black"
         >
           на главную

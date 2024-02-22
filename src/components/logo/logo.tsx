@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { LogoIcon } from '@/UI/icons/logo-icon';
 import { useAppSelector, useAppDispatch } from '@/redux/hooks';
 import { RootState } from '@/redux/store';
-import { AppRoutes } from '@/common/routes';
+import { APP_ROUTES } from '@/common/routes';
 import { setPath } from '@/redux/pathSlice/pathSlice';
 
 export const Logo = ({ className }: { className?: string }) => {
@@ -18,9 +18,9 @@ export const Logo = ({ className }: { className?: string }) => {
       <Link
         href="/"
         className={`text-2xl font-bold`}
-        onClick={() => dispatch(setPath(AppRoutes.HOME))}
+        onClick={() => dispatch(setPath(APP_ROUTES.HOME))}
       >
-        {currentPath === AppRoutes.HOME ? (
+        {currentPath === APP_ROUTES.HOME ? (
           <LogoIcon className="cursor-default" />
         ) : (
           <LogoIcon className="hover:bg-color-dark" />

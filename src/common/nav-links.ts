@@ -1,4 +1,4 @@
-import { AppRoutes } from './routes';
+import { APP_ROUTES } from './routes';
 import HomeIcon from '@mui/icons-material/Home';
 import NetworkCheckIcon from '@mui/icons-material/NetworkCheck';
 import RecentActorsIcon from '@mui/icons-material/RecentActors';
@@ -12,32 +12,32 @@ const favoritesCount = 0;
 export const NAV_LINKS = [
   {
     name: 'Главная',
-    path: AppRoutes.HOME,
+    path: APP_ROUTES.HOME,
     Icon: HomeIcon,
   },
   {
     name: 'Настройки',
-    path: AppRoutes.SETTINGS,
+    path: APP_ROUTES.SETTINGS,
     Icon: NetworkCheckIcon,
   },
   {
     name: 'Linux Astra',
-    path: AppRoutes.LINUX,
+    path: APP_ROUTES.LINUX,
     Icon: StarIcon,
   },
   {
     name: 'Питание',
-    path: AppRoutes.FOOD,
+    path: APP_ROUTES.FOOD,
     Icon: RestaurantIcon,
   },
   {
     name: 'Контакты',
-    path: AppRoutes.CONTACTS,
+    path: APP_ROUTES.CONTACTS,
     Icon: RecentActorsIcon,
   },
   {
     name: `Избранное (${favoritesCount})`,
-    path: AppRoutes.FAVORITES,
+    path: APP_ROUTES.FAVORITES,
     Icon: favoritesCount <= 0 ? BookmarkBorderIcon : BookmarkIcon,
   },
 ];

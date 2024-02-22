@@ -8,6 +8,7 @@ import { RootState } from '@/redux/store';
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import { useEffect } from 'react';
 import styles from '@/UI/sass/nav-panel.module.scss';
+// import { useLocation } from 'react-router-dom';
 
 export const NavPanel = () => {
   const dispatch = useAppDispatch();
