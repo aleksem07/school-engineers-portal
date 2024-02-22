@@ -6,7 +6,7 @@ type PathStateType = {
 };
 
 const initialState: PathStateType = {
-  value: '',
+  value: '/',
 };
 
 const pathSlice = createSlice({

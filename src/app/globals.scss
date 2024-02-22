@@ -1,0 +1,45 @@
+@import '@/UI/sass/variables.module.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 25, 25, 25;
+  --background-start-rgb: 197, 196, 203;
+  --background-end-rgb: 245, 245, 241;
+}
+
+a {
+  transition: all 0.3s ease-out;
+  color: $color-contrast;
+}
+
+a:hover {
+  transition: all 0.3s ease-out;
+  color: $color-dark--light;
+}
+
+ol {
+  list-style-type: decimal;
+}
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 200, 200, 200;
+    --background-start-rgb: 100, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: $color-black;
+}
+
+main {
+  background: $color-grey;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
