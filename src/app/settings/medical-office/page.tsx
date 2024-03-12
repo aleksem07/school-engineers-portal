@@ -1,6 +1,8 @@
 import BoxSystemProps from '@/components/material/box/box';
 
-const MedicalOffice = () => {
+type MedicalOfficeTypes = typeof BoxSystemProps;
+
+const MedicalOffice: MedicalOfficeTypes = () => {
   return (
     <>
       <BoxSystemProps

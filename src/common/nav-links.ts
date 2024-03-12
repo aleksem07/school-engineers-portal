@@ -2,7 +2,6 @@ import { APP_ROUTES } from './routes';
 import HomeIcon from '@mui/icons-material/Home';
 import NetworkCheckIcon from '@mui/icons-material/NetworkCheck';
 import RecentActorsIcon from '@mui/icons-material/RecentActors';
-import RestaurantIcon from '@mui/icons-material/Restaurant';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import StarIcon from '@mui/icons-material/Star';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
@@ -25,11 +24,6 @@ export const NAV_LINKS = [
     name: 'Linux Astra',
     path: APP_ROUTES.LINUX,
     Icon: StarIcon,
-  },
-  {
-    name: 'Питание',
-    path: APP_ROUTES.FOOD,
-    Icon: RestaurantIcon,
   },
   {
     name: 'Контакты',

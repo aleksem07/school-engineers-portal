@@ -1,26 +1,18 @@
-import { SETTINGS_ROUTES } from '@/common/routes';
-import ScrollWatcher from '@/components/scroll-watcher/scroll-watcher';
-import Link from 'next/link';
 import type { Metadata } from 'next';
+import NavPanelSettingsPage from '@/components/nav-panel-settings-page/nav-panel-settings-page';
 
 export const metadata: Metadata = {
   title: 'SEP - Settings',
 };
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <section className="w-full p-4 flex-[0]">
-        <ul>
-          {SETTINGS_ROUTES.map(({ path, name }) => (
-            <li key={path}>
-              <Link href={path}>{name}</Link>
-            </li>
-          ))}
-        </ul>
-
-        <ScrollWatcher />
-      </section>
+      <NavPanelSettingsPage />
       {children}
     </>
   );

@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="ru">
       <body className={`flex justify-center h-screen ${roboto.className}`}>
         <Providers>
-          <main className="flex gap-2 max-w-[1920px] w-full h-[fit-content]">
+          <main className="flex gap-0 max-w-[1920px] w-full h-[fit-content]">
             <NavPanel />
             {children}
           </main>

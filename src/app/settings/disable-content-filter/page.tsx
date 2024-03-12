@@ -1,7 +1,10 @@
 'use client';
 import Link from 'next/link';
 import BoxSystemProps from '@/components/material/box/box';
-const DataDisableContentFilter = () => {
+
+type DataDisableContentFilterTypes = typeof BoxSystemProps;
+
+const DataDisableContentFilter: DataDisableContentFilterTypes = () => {
   return (
     <BoxSystemProps
       data={

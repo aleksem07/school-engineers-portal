@@ -10,14 +10,18 @@ export enum APP_ROUTES {
 export const SETTINGS_ROUTES = [
   {
     path: `${APP_ROUTES.SETTINGS}/network`,
-    name: 'Network',
+    name: 'Интернет',
   },
   {
     path: `${APP_ROUTES.SETTINGS}/disable-content-filter`,
-    name: 'Disable Content Filter',
+    name: 'Контент фильтр',
   },
   {
     path: `${APP_ROUTES.SETTINGS}/medical-office`,
-    name: 'Medical Office',
+    name: 'Мед. кабинет',
+  },
+  {
+    path: `${APP_ROUTES.SETTINGS}/food`,
+    name: 'Питание',
   },
 ];

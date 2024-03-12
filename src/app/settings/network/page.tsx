@@ -2,7 +2,10 @@
 import BasicTabs from '@/components/material/tabs/tabs';
 import Link from 'next/link';
 import BoxSystemProps from '@/components/material/box/box';
-const NetworkSetting = () => {
+
+type NetworkSettingTypes = typeof BoxSystemProps;
+
+const NetworkSetting: NetworkSettingTypes = () => {
   return (
     <>
       <BoxSystemProps
