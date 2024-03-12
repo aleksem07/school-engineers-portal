@@ -1,10 +1,9 @@
-import AccordionUsage from '@/components/material/accordion/accordion';
+import BoxSystemProps from '@/components/material/box/box';
 
 const MedicalOffice = () => {
   return (
     <>
-      <AccordionUsage
-        title={'Медицинский кабинет (РС ЕГИСЗ)'}
+      <BoxSystemProps
         data={
           <ol className="ml-10">
             <li>

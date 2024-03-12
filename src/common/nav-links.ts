@@ -6,6 +6,7 @@ import RestaurantIcon from '@mui/icons-material/Restaurant';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import StarIcon from '@mui/icons-material/Star';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
+import { SETTINGS_ROUTES } from '@/common/routes';
 
 const favoritesCount = 0;
 
@@ -17,7 +18,7 @@ export const NAV_LINKS = [
   },
   {
     name: 'Настройки',
-    path: APP_ROUTES.SETTINGS,
+    path: SETTINGS_ROUTES[0].path,
     Icon: NetworkCheckIcon,
   },
   {

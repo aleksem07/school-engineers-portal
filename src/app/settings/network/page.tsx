@@ -1,20 +1,17 @@
 'use client';
-import AccordionUsage from '@/components/material/accordion/accordion';
 import BasicTabs from '@/components/material/tabs/tabs';
 import Link from 'next/link';
-
-const NetworkSetting = ({ open }: { open?: boolean }) => {
+import BoxSystemProps from '@/components/material/box/box';
+const NetworkSetting = () => {
   return (
     <>
-      <AccordionUsage
-        title={'Сетевые настройки'}
+      <BoxSystemProps
         data={
           <>
             <BasicTabs />
             <Link href={'/'}>Подробнее</Link>
           </>
         }
-        isOpen={open}
       />
     </>
   );

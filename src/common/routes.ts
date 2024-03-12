@@ -7,8 +7,17 @@ export enum APP_ROUTES {
   FAVORITES = '/favorites',
 }
 
-export enum SETTINGS_ROUTES {
-  NETWORK = `${APP_ROUTES.SETTINGS}/network`,
-  DISABLE_CONTENT_FILTER = `${APP_ROUTES.SETTINGS}/disable-content-filter`,
-  MEDICAL_OFFICE = `${APP_ROUTES.SETTINGS}/medical-office`,
-}
+export const SETTINGS_ROUTES = [
+  {
+    path: `${APP_ROUTES.SETTINGS}/network`,
+    name: 'Network',
+  },
+  {
+    path: `${APP_ROUTES.SETTINGS}/disable-content-filter`,
+    name: 'Disable Content Filter',
+  },
+  {
+    path: `${APP_ROUTES.SETTINGS}/medical-office`,
+    name: 'Medical Office',
+  },
+];

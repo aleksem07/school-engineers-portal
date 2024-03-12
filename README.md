@@ -49,9 +49,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [ ] Favorites
 
 ## "scripts":
+
 - `"dev"`: "next dev",
 - `"build"`: "next build",
 - `"start"`: "next start",
 - `"lint"`: "next lint",
-- `"format"`: "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
+- `"format"`: "prettier --write 'src/\*_/_.{js,jsx,ts,tsx}'"
 
+## "Структура":
+
+- #### | App
+- #### | Common
+- #### | redux
+- #### | UI
