@@ -16,10 +16,10 @@ const NavPanelSettingsPage: React.FC = () => {
         {SETTINGS_ROUTES.map(({ path, name }) => (
           <li
             key={path}
-            className={`bg-color-light my-2 p-2 min-w-[max-content] ${
+            className={`bg-color-light my-2 p-2 min-w-[max-content] transition-all ease-in-out duration-300 ${
               path === currentPath
-                ? 'bg-color-white shadow-sm shadow-color-contrast'
-                : 'mr-14'
+                ? 'bg-color-white shadow-sm shadow-color-contrast rounded-l-xl '
+                : 'mr-10'
             }`}
           >
             <Link href={path} onClick={() => dispatch(setPath(path))}>
