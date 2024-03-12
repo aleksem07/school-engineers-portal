@@ -17,6 +17,7 @@ export const NavPanel = () => {
   useEffect(() => {
     const storedPath = window.location.pathname;
     dispatch(setPath(storedPath));
+    console.log(window.location.pathname);
   }, [dispatch]);
 
   return (
@@ -31,7 +32,7 @@ export const NavPanel = () => {
               href={path}
               onClick={() => dispatch(setPath(path))}
               className={`flex justify-start gap-2 p-2 mobile:justify-center mobile:px-1  ${
-                currentPath === path
+                currentPath.split('/')[1] === path.split('/')[1]
                   ? `bg-color-grey hover:bg-color-grey cursor-default text-color-black hover:text-color-black rounded-l-full ${styles.active}`
                   : 'text-color-light hover:text-color-grey'
               }`}
