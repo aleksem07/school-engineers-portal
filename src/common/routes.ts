@@ -6,9 +6,3 @@ export enum APP_ROUTES {
   CONTACTS = '/contacts',
   FAVORITES = '/favorites',
 }
-
-export enum SETTINGS_ROUTES {
-  NETWORK = `${APP_ROUTES.SETTINGS}/network`,
-  DISABLE_CONTENT_FILTER = `${APP_ROUTES.SETTINGS}/disable-content-filter`,
-  MEDICAL_OFFICE = `${APP_ROUTES.SETTINGS}/medical-office`,
-}

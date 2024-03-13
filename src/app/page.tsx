@@ -12,7 +12,7 @@ export default function Home() {
         <p>Портал создан для инженеров образовательных учреждений.</p>
         <p className="overflow-wrap">
           Здесь собраны справочные материалы по настройке и рекомендуемое ПО для
-          поддержания работы школьного парка техники и сети.
+          поддержки работы школьного парка техники и сети.
         </p>
       </div>
       <div className="rounded-lg p-6 bg-color-light mb-4 drop-shadow-md flex gap-2">

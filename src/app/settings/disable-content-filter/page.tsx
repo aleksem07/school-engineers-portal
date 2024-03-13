@@ -1,11 +1,12 @@
 'use client';
 import Link from 'next/link';
-import AccordionUsage from '@/components/material/accordion/accordion';
+import BoxSystemProps from '@/components/material/box/box';
 
-const DataDisableContentFilter = () => {
+type DataDisableContentFilterTypes = typeof BoxSystemProps;
+
+const DataDisableContentFilter: DataDisableContentFilterTypes = () => {
   return (
-    <AccordionUsage
-      title={'Отключение контентной фильтрации'}
+    <BoxSystemProps
       data={
         <div>
           <p>
