@@ -14,7 +14,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <NavPanelAdditional links={LINUX_ROUTES} section={'dfgfd'} />
+      <NavPanelAdditional links={LINUX_ROUTES} section={APP_ROUTES.LINUX} />
       {children}
     </>
   );

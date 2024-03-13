@@ -8,17 +8,11 @@ import ScrollWatcher from '@/components/scroll-watcher/scroll-watcher';
 import Link from 'next/link';
 import { useAppDispatch } from '@/redux/hooks';
 import { useCallback, useEffect, useState } from 'react';
-import { RootState } from '@/redux/store';
 import { APP_ROUTES } from '@/common/routes';
 
 interface ILinks {
   path: string;
   name: string;
-}
-
-enum PathType {
-  LINUX = 'LINUX',
-  SETTINGS = 'SETTINGS',
 }
 
 const NavPanelAdditional = ({
@@ -27,7 +21,6 @@ const NavPanelAdditional = ({
 }: {
   links: ILinks[];
   section: string;
-
 }) => {
   const dispatch = useAppDispatch();
   const [currentPath, setCurrentPath] = useState<string>('');
@@ -38,7 +31,7 @@ const NavPanelAdditional = ({
       if (path.includes(section)) {
         section === APP_ROUTES.SETTINGS
           ? dispatch(setPathSettings(path))
-          : setPathLinux(path);
+          : dispatch(setPathLinux(path));
       }
       setCurrentPath(path);
     },
