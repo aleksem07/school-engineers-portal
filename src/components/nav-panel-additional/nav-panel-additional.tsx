@@ -1,26 +1,48 @@
 'use client';
-import { setPath, setPathSettings } from '@/redux/pathSlice/pathSlice';
+import {
+  setPath,
+  setPathSettings,
+  setPathLinux,
+} from '@/redux/pathSlice/pathSlice';
 import ScrollWatcher from '@/components/scroll-watcher/scroll-watcher';
 import Link from 'next/link';
 import { useAppDispatch } from '@/redux/hooks';
 import { useCallback, useEffect, useState } from 'react';
+import { RootState } from '@/redux/store';
 
-interface IAddRoutes {
+interface ILinks {
   path: string;
   name: string;
 }
 
-const NavPanelAdditional = ({ addRoutes }: { addRoutes: IAddRoutes[] }) => {
+enum PathType {
+  LINUX = 'LINUX',
+  SETTINGS = 'SETTINGS',
+}
+
+const NavPanelAdditional = ({
+  links,
+  section,
+  pathSlice,
+}: {
+  links: ILinks[];
+  section: string;
+  pathSlice: PathType.LINUX | PathType.SETTINGS;
+}) => {
   const dispatch = useAppDispatch();
   const [currentPath, setCurrentPath] = useState<string>('');
 
   const setPathHandler = useCallback(
     (path: string) => {
       dispatch(setPath(path));
-      dispatch(setPathSettings(path));
+      if (path.includes(section)) {
+        pathSlice === PathType.SETTINGS
+          ? dispatch(setPathSettings(path))
+          : setPathLinux(path);
+      }
       setCurrentPath(path);
     },
-    [dispatch, setCurrentPath]
+    [dispatch, section, pathSlice]
   );
 
   useEffect(() => {
@@ -31,7 +53,7 @@ const NavPanelAdditional = ({ addRoutes }: { addRoutes: IAddRoutes[] }) => {
   return (
     <section className="w-full pl-4 pt-24 flex-[0]">
       <ul>
-        {addRoutes.map(({ path, name }) => {
+        {links.map(({ path, name }) => {
           return (
             <li
               key={path}
