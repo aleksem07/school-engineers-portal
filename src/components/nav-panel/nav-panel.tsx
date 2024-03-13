@@ -1,23 +1,22 @@
 'use client';
 import { Logo } from '@/components/logo/logo';
 import { Footer } from '@/components/footer/footer';
-import { NAV_LINKS } from '@/common/nav-links';
+import NAV_LINKS from '@/common/links-nav';
 import Link from 'next/link';
 import { setPath } from '@/redux/pathSlice/pathSlice';
 import { RootState } from '@/redux/store';
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import { useEffect } from 'react';
 import styles from '@/UI/sass/nav-panel.module.scss';
-// import { useLocation } from 'react-router-dom';
 
 export const NavPanel = () => {
   const dispatch = useAppDispatch();
+  const navLinks = NAV_LINKS();
   const currentPath = useAppSelector((state: RootState) => state.path.value);
 
   useEffect(() => {
     const storedPath = window.location.pathname;
     dispatch(setPath(storedPath));
-    console.log(window.location.pathname);
   }, [dispatch]);
 
   return (
@@ -26,7 +25,7 @@ export const NavPanel = () => {
       <ul
         className={`flex gap-2 flex-col pl-4 py-4 mobile:pl-1 ${styles.navPanel}`}
       >
-        {NAV_LINKS.map(({ name, path, Icon }, index) => (
+        {navLinks.map(({ name, path, Icon }, index) => (
           <li key={`${name} ${index}`}>
             <Link
               href={path}

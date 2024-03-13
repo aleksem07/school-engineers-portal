@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import NavPanelAdditional from '@/components/nav-panel-additional/nav-panel-additional';
-import { SETTINGS_ROUTES } from '@/common/routes';
+import { SETTINGS_ROUTES } from '@/common/links-settings';
 
 export const metadata: Metadata = {
   title: 'SEP - Settings',
@@ -13,7 +13,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <NavPanelAdditional settingsRoutes={SETTINGS_ROUTES} />
+      <NavPanelAdditional addRoutes={SETTINGS_ROUTES} />
       {children}
     </>
   );

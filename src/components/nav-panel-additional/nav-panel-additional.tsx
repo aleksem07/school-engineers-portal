@@ -1,44 +1,58 @@
 'use client';
-import { setPath } from '@/redux/pathSlice/pathSlice';
+import { setPath, setPathSettings } from '@/redux/pathSlice/pathSlice';
 import ScrollWatcher from '@/components/scroll-watcher/scroll-watcher';
 import Link from 'next/link';
-import { RootState } from '@/redux/store';
-import { useAppDispatch, useAppSelector } from '@/redux/hooks';
+import { useAppDispatch } from '@/redux/hooks';
+import { useCallback, useEffect, useState } from 'react';
 
-interface ISettingsRoutes {
+interface IAddRoutes {
   path: string;
   name: string;
 }
 
-const NavPanelAdditional = ({
-  settingsRoutes,
-}: {
-  settingsRoutes: ISettingsRoutes[];
-}) => {
+const NavPanelAdditional = ({ addRoutes }: { addRoutes: IAddRoutes[] }) => {
   const dispatch = useAppDispatch();
-  const currentPath = useAppSelector((state: RootState) => state.path.value);
+  const [currentPath, setCurrentPath] = useState<string>('');
+
+  const setPathHandler = useCallback(
+    (path: string) => {
+      dispatch(setPath(path));
+      dispatch(setPathSettings(path));
+      setCurrentPath(path);
+    },
+    [dispatch, setCurrentPath]
+  );
+
+  useEffect(() => {
+    const storedPath = window.location.pathname;
+    setPathHandler(storedPath);
+  }, [setPathHandler]);
 
   return (
     <section className="w-full pl-4 pt-24 flex-[0]">
       <ul>
-        {settingsRoutes.map(({ path, name }) => (
-          <li
-            key={path}
-            className={`flex bg-color-light my-2 min-w-[max-content] transition-all ease-in-out duration-300 hover:bg-color-white ${
-              path === currentPath
-                ? 'bg-color-white shadow-sm shadow-color-contrast rounded-l-xl '
-                : 'mr-10'
-            }`}
-          >
-            <Link
-              href={path}
-              className="p-2 flex-1"
-              onClick={() => dispatch(setPath(path))}
+        {addRoutes.map(({ path, name }) => {
+          return (
+            <li
+              key={path}
+              className={`flex bg-color-light my-2 min-w-[max-content] transition-all ease-in-out duration-300 hover:bg-color-white ${
+                currentPath === path
+                  ? 'bg-color-white shadow-sm shadow-color-contrast rounded-l-xl '
+                  : 'mr-10'
+              }`}
             >
-              {name}
-            </Link>
-          </li>
-        ))}
+              <Link
+                href={path}
+                className="p-2 flex-1"
+                onClick={() => {
+                  setPathHandler(path);
+                }}
+              >
+                {name}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
 
       <ScrollWatcher />
