@@ -50,15 +50,17 @@ const NavPanelAdditional = ({
           return (
             <li
               key={path}
-              className={`flex bg-color-light my-2 min-w-[max-content] transition-all ease-in-out duration-300 hover:bg-color-white ${
+              className={`flex bg-color-light my-2 min-w-[max-content] rounded-l-xl transition-all ease-in-out duration-300 hover:bg-color-white ${
                 currentPath === path
-                  ? 'bg-color-white shadow-sm shadow-color-contrast rounded-l-xl '
+                  ? 'bg-color-white shadow-sm shadow-color-contrast text-color-black'
                   : 'mr-10'
               }`}
             >
               <Link
                 href={path}
-                className="p-2 flex-1"
+                className={`py-2 px-3 flex-1 ${
+                  currentPath === path && 'font-semibold'
+                }`}
                 onClick={() => {
                   setPathHandler(path);
                 }}

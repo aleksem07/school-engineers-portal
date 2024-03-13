@@ -32,7 +32,7 @@ export const NavPanel = () => {
               onClick={() => dispatch(setPath(path))}
               className={`flex justify-start gap-2 p-2 mobile:justify-center mobile:px-1  ${
                 currentPath.split('/')[1] === path.split('/')[1]
-                  ? `bg-color-grey hover:bg-color-grey cursor-default text-color-black hover:text-color-black rounded-l-full ${styles.active}`
+                  ? `bg-color-grey hover:bg-color-grey cursor-default text-color-black hover:text-color-black rounded-l-xl font-semibold ${styles.active}`
                   : 'text-color-light hover:text-color-grey'
               }`}
               aria-current={currentPath === path && 'page'}
