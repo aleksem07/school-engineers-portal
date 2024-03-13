@@ -1,19 +1,27 @@
 'use client';
 import { setPath } from '@/redux/pathSlice/pathSlice';
-import { SETTINGS_ROUTES } from '@/common/routes';
 import ScrollWatcher from '@/components/scroll-watcher/scroll-watcher';
 import Link from 'next/link';
 import { RootState } from '@/redux/store';
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 
-const NavPanelSettingsPage: React.FC = () => {
+interface ISettingsRoutes {
+  path: string;
+  name: string;
+}
+
+const NavPanelAdditional = ({
+  settingsRoutes,
+}: {
+  settingsRoutes: ISettingsRoutes[];
+}) => {
   const dispatch = useAppDispatch();
   const currentPath = useAppSelector((state: RootState) => state.path.value);
 
   return (
     <section className="w-full pl-4 pt-24 flex-[0]">
       <ul>
-        {SETTINGS_ROUTES.map(({ path, name }) => (
+        {settingsRoutes.map(({ path, name }) => (
           <li
             key={path}
             className={`flex bg-color-light my-2 min-w-[max-content] transition-all ease-in-out duration-300 hover:bg-color-white ${
@@ -38,4 +46,4 @@ const NavPanelSettingsPage: React.FC = () => {
   );
 };
 
-export default NavPanelSettingsPage;
+export default NavPanelAdditional;

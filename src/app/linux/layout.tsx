@@ -3,7 +3,7 @@ import NavPanelAdditional from '@/components/nav-panel-additional/nav-panel-addi
 import { SETTINGS_ROUTES } from '@/common/routes';
 
 export const metadata: Metadata = {
-  title: 'SEP - Settings',
+  title: 'SEP - Linux',
 };
 
 interface LayoutProps {
