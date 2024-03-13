@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { useAppDispatch } from '@/redux/hooks';
 import { useCallback, useEffect, useState } from 'react';
 import { RootState } from '@/redux/store';
+import { APP_ROUTES } from '@/common/routes';
 
 interface ILinks {
   path: string;
@@ -23,11 +24,10 @@ enum PathType {
 const NavPanelAdditional = ({
   links,
   section,
-  pathSlice,
 }: {
   links: ILinks[];
   section: string;
-  pathSlice: PathType.LINUX | PathType.SETTINGS;
+
 }) => {
   const dispatch = useAppDispatch();
   const [currentPath, setCurrentPath] = useState<string>('');
@@ -36,13 +36,13 @@ const NavPanelAdditional = ({
     (path: string) => {
       dispatch(setPath(path));
       if (path.includes(section)) {
-        pathSlice === PathType.SETTINGS
+        section === APP_ROUTES.SETTINGS
           ? dispatch(setPathSettings(path))
           : setPathLinux(path);
       }
       setCurrentPath(path);
     },
-    [dispatch, section, pathSlice]
+    [dispatch, section]
   );
 
   useEffect(() => {

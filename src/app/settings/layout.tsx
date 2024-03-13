@@ -17,7 +17,6 @@ const Layout = ({ children }: LayoutProps) => {
       <NavPanelAdditional
         links={SETTINGS_ROUTES}
         section={APP_ROUTES.SETTINGS}
-        pathSlice={'SETTINGS'}
       />
       {children}
     </>
